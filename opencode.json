@@ -6,9 +6,9 @@
         "type": "local",
         "command": ["npx", "-y", "gamemaker-mcp@latest"],
         "environment": {
-          "GAMEMAKER_PROJECT": "E:\\GMprojects\\NewGame",
-          "GAMEMAKER_MCP_MODE": "read-only",
-          "GAMEMAKER_MCP_ALLOW_BUILD": "0"
+          "GAMEMAKER_PROJECT": "E:\\GMprojects\\261103GJ",
+          "GAMEMAKER_MCP_MODE": "workspace-write",
+          "GAMEMAKER_MCP_ALLOW_BUILD": "1"
         },
         "disabled": false
       }
