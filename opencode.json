@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "gamemaker": {
+        "type": "local",
+        "command": ["npx", "-y", "gamemaker-mcp@latest"],
+        "environment": {
+          "GAMEMAKER_PROJECT": "E:\\GMprojects\\NewGame",
+          "GAMEMAKER_MCP_MODE": "read-only",
+          "GAMEMAKER_MCP_ALLOW_BUILD": "0"
+        },
+        "disabled": false
+      }
+    }
+  }
+}
