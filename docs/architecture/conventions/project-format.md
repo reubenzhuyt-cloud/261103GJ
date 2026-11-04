@@ -14,6 +14,11 @@
 - `RoomOrderNodes[]`：第 0 项 = 初始房间（:26-28）
 - `AudioGroups` 至少 `audiogroup_default`（:4-6）、`TextureGroups` 至少 `Default`（:30-32）
 - `IncludedFiles` 空也要写 `[]`（:14）、`Folders`（:12）
+- `defaultScriptType`（:11）分级结论：
+  - `1` = **GML Code —— 已由项目所有者实机确认**（2026-11-03 23:28 在 IDE 创建 Object1 Create 事件时选择 "GML Code"，IDE 落盘 `0`→`1`，提交 `618436e`）
+  - `0` = **未验证**（空白模板初始值为 `0`；可能为 GML Visual 或"每次询问"，**不可断言**，待实证）
+  - 操作提示：若新建对象/脚本的事件不是 GML Code，先检查 `.yyp` 的 `defaultScriptType` 是否为 `1`，或在 IDE 中重设；
+    **不要手改 `.yyp`** —— IDE 保存时会覆盖该字段
 - 未在 `resources[]` 注册的 `.yy` 会被完全忽略；声明了不存在的路径会致命报错（手册：项目结构）
 
 ## 资源 `.yy` 通则
